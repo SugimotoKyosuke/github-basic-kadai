@@ -1,15 +1,18 @@
-PS C:\Users\kagon\git_challenge> git init git_challenge
-Initialized empty Git repository in C:/Users/kagon/git_challenge/git_challenge/.git/
-PS C:\Users\kagon\git_challenge> cd git_challenge
-PS C:\Users\kagon\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\kagon\git_challenge\git_challenge> git commit -m "hello_world.txtを追加"
-[main (root-commit) 3944957] hello_world.txtを追加
- 1 file changed, 1 insertion(+)
+PS C:\Users\kagon> git init git_challenge
+Initialized empty Git repository in C:/Users/kagon/git_challenge/.git/
+PS C:\Users\kagon> cd git_challenge
+PS C:\Users\kagon\git_challenge> echo "" >> hello_world.txt
+PS C:\Users\kagon\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\kagon\git_challenge> git add hello_world.txt
+PS C:\Users\kagon\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 2205a0e] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
-PS C:\Users\kagon\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\kagon\git_challenge\git_challenge> git commit -m "日本語訳を追加"
-[main bd7fb76] 日本語訳を追加
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\Users\kagon\git_challenge\git_challenge> git log --oneline
-bd7fb76 (HEAD -> main) 日本語訳を追加
-3944957 hello_world.txtを追加
+PS C:\Users\kagon\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\kagon\git_challenge> git add hello_world.txt
+PS C:\Users\kagon\git_challenge> git commit -m "日本語訳を追加"
+[main 72fe529] 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\kagon\git_challenge> git log --oneline
+72fe529 (HEAD -> main) 日本語訳を追加
+2205a0e hello_world.txtを追加
